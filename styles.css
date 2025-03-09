@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #acf3ff;
+  }
+
+  h1 {
+    font-size: 72px;
+    color: #007bff;
+    -webkit-text-stroke: 2px black;
+    margin: 0;
+  }
+
+  header {
+    background: #007bff;
+    color: white;
+    height: 80px;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  nav {
+    float: right;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  nav a:hover {
+    color: aqua;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .box {
+    float: left;
+    width: 360px;
+    height: 320px;
+    background-color: #007bff;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  .section1 {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0px;
+    background-color: azure;
+  }
+
+  .section1__content {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .section1__content p {
+    line-height: 140%;
+    text-align: justify;
+    font-weight: 600;
+    color: #004ea1;
+  }
+
+  .section1__content img {
+    float: left;
+    margin-right: 40px;
+    width: 50%;
+    min-width: 290px;
+    border-radius: 20px;
+  }
+
+  footer {
+    clear: both;
+    background-color: aqua;
+    width: 100%;
+    height: 160px;
+  }
