@@ -16,7 +16,14 @@ body {
     background: #007bff;
     color: white;
     height: 80px;
-    clear: both;
+    width: 100%;
+  }
+
+  .header__content {
+    max-width: 1200px;
+    margin: auto;
+    height: 80px;
+    overflow: hidden;
   }
 
   .logo {
@@ -24,6 +31,7 @@ body {
     font-weight: bold;
     height: 100%;
     padding: 0 20px;
+    overflow: hidden;
   }
 
   .logo a {
@@ -31,18 +39,12 @@ body {
     text-decoration: none;
     font-size: 24px;
   }
-
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-  }
-
+  
   nav {
     float: right;
     padding: 10px 20px;
     text-align: center;
+    overflow: hidden;
   }
 
   nav a {
@@ -60,6 +62,12 @@ body {
 
   .hero {
     width: 100%;
+    overflow: hidden;
+    padding: 80px;
+  }
+
+  .hero__content {
+    max-width: 1200px;
   }
 
   .box {
