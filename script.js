@@ -78,6 +78,30 @@ class CardPagination {
     }
 }
 
+// Hamburger Menu functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Cerrar menú al hacer click en un enlace
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const cardPagination = new CardPagination(6); // Mostrando 6 cards por página
     cardPagination.loadCards();
