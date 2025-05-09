@@ -2,9 +2,29 @@
 :root {
   --primary-color: #007bff;
   --primary-dark: #004ea1;
-  --light-bg: #acf3ff;
+  --turquoise: #00c6ff;
+  --navy-blue: #0041aa;
   --white: #ffffff;
   --max-width: 1200px;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 6px;
+  border: 3px solid var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
 }
 
 * {
@@ -15,8 +35,9 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: var(--light-bg);
+  background: linear-gradient(45deg, var(--navy-blue), var(--turquoise));
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* Header Styles */
@@ -67,41 +88,34 @@ nav {
 
 /* Hero Section */
 .hero {
-  padding: 4rem 2rem;
+  padding: 12rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--white);
 }
 
 .hero__content {
   max-width: var(--max-width);
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.box {
-  flex: 0 1 calc(33.333% - 2rem);
-  min-width: 280px;
-  background-color: var(--primary-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  aspect-ratio: 1;
-}
-
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.box h3 {
-  font-size: 1.5rem;
   text-align: center;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.hero__content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Section 1 */
@@ -143,7 +157,7 @@ nav {
 
 /* Cards Section */
 .cards-section {
-  background-color: var(--light-bg);
+  background: linear-gradient(135deg, var(--navy-blue), var(--turquoise));
   padding: 4rem 2rem;
 }
 
@@ -168,11 +182,12 @@ nav {
   aspect-ratio: 3/4;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 198, 255, 0.1);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(128, 228, 255, 0.5);
 }
 
 .card img {
@@ -188,7 +203,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--primary-color);
+  background-color: var(--primary-dark);
   color: var(--white);
 }
 
@@ -276,11 +291,21 @@ footer {
     justify-content: center;
   }
 
+  .hero__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
   .content-wrapper {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+  
   .content-wrapper img {
     width: 100%;
     margin: 0 auto 2rem;
@@ -289,10 +314,6 @@ footer {
   .text-content {
     padding: 0;
     width: 100%;
-  }
-
-  .box {
-    flex: 1 1 calc(50% - 2rem);
   }
 
   .cards-grid {
