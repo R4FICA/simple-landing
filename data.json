@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Card 1",
+      "description": "Description for card 1",
+      "image": "https://placehold.co/300x200"
+    },
+    {
+      "id": 2,
+      "title": "Card 2",
+      "description": "Description for card 2",
+      "image": "https://placehold.co/300x200"
+    },
+    {
+      "id": 3,
+      "title": "Card 3",
+      "description": "Description for card 3",
+      "image": "https://placehold.co/300x200"
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "description": "Description for card 4",
+      "image": "https://placehold.co/300x200"
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "description": "Description for card 5",
+      "image": "https://placehold.co/300x200"
+    },
+    {
+      "id": 6,
+      "title": "Card 6",
+      "description": "Description for card 6",
+      "image": "https://placehold.co/300x200"
+    }
+  ]
+}
